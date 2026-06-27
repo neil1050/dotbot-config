@@ -31,6 +31,14 @@ require("lazy").setup({
         priority = 1000,
         opts = {},
     },
+    {
+        "vimwiki/vimwiki",
+        init = function()
+        vim.g.vimwiki_path = "~/vimwiki/"
+        vim.g.vimwiki_syntax = "default"
+        vim.g.vimwiki_ext = "wiki"
+        end,
+    },
     -- import your plugins
     -- { import = "plugins" },
   },
