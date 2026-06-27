@@ -39,6 +39,11 @@ require("lazy").setup({
         vim.g.vimwiki_ext = "wiki"
         end,
     },
+    {
+        "L3MON4D3/LuaSnip",
+        lazy = false,
+        opts = {}
+    },
     -- import your plugins
     -- { import = "plugins" },
   },
