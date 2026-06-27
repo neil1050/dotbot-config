@@ -31,6 +31,8 @@ require("lazy").setup({
         priority = 1000,
         opts = {},
     },
+
+    -- install vimwiki
     {
         "vimwiki/vimwiki",
         init = function()
@@ -39,6 +41,8 @@ require("lazy").setup({
         vim.g.vimwiki_ext = "wiki"
         end,
     },
+    
+    -- set up for nvim-cmp
     {
         "L3MON4D3/LuaSnip",
         lazy = false,
