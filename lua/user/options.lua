@@ -17,3 +17,6 @@ vim.opt.shiftwidth = 0
 vim.opt.cpoptions = vim.opt.cpoptions + 'I'
 
 vim.cmd("filetype plugin indent on")  -- enable auto-indentation based on file type
+
+-- use color scheme
+vim.cmd.colorscheme("tokyonight")
