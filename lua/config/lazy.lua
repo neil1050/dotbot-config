@@ -80,6 +80,16 @@ require("lazy").setup({
         lazy = false,
         opts = {}
     },
+
+    -- add git integration to neovim
+    {
+        "tpope/vim-fugitive",
+        lazy = false
+    },
+    {
+        "lewis6991/gitsigns.nvim",
+        lazy = false
+    },
     -- import your plugins
     -- { import = "plugins" },
   },
