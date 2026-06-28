@@ -20,14 +20,31 @@ cmp.setup({
         {name = "luasnip"},
         {name = "nvim_lsp"},
         {name = "buffer"}
-    })
+    }),
+
+    -- integrate with colorful menu
+    formatting = {
+        format = function(entry, vim_item)
+            local highlights_info = require("colorful-menu").cmp_highlights(entry)
+
+            -- highlight_info is nil means we are missing the ts parser, it's
+            -- better to fallback to use default `vim_item.abbr`. What this plugin
+            -- offers is two fields: `vim_item.abbr_hl_group` and `vim_item.abbr`.
+            if highlights_info ~= nil then
+                vim_item.abbr_hl_group = highlights_info.highlights
+                vim_item.abbr = highlights_info.text
+            end
+
+            return vim_item
+        end,
+    }
 })
 
 -- setup lspconfig
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-vim.lsp.config("pyright", {capabilities = capabilities})
-vim.lsp.enable("pyright")
+vim.lsp.config("basedpyright", {capabilities = capabilities})
+vim.lsp.enable("basedpyright")
 
 vim.lsp.config("clangd", {capabilities = capabilities})
 vim.lsp.enable("clangd")
