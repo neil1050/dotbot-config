@@ -42,3 +42,16 @@ cmp.setup({
 
 -- setup lspconfig
 require('cmp_nvim_lsp')
+
+-- disable pyright type checking in favor of mypy
+
+vim.lsp.config("basedpyright",
+{
+    settings = {
+        basedpyright = {
+            analysis = {
+                typeCheckingMode = "off"
+            }
+        }
+    }
+})
