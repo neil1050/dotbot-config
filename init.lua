@@ -5,10 +5,7 @@ require("config.lazy")
 require("keymaps.init")
 
 -- load plugin settings
-require("config.vimwiki")
-require("config.nvim-cmp")
-require("config.nvim-lint")
-require("config.conform")
+require("config.init")
 
 -- load basic options
 require("config.options")
