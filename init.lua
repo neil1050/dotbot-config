@@ -5,7 +5,6 @@ require("config.lazy")
 require("keymaps.init")
 
 -- load plugin settings
-require("config.lualine")
 require("config.vimwiki")
 require("config.nvim-cmp")
 require("config.nvim-lint")
