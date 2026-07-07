@@ -5,7 +5,8 @@ return {
             timeout_ms = 10000
         },
         formatters_by_ft = {
-            python = {"black"}
+            python = {"black"},
+	    yaml = {"yaml-fmt"}
         }
     },
 }
