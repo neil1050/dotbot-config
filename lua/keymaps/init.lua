@@ -1,3 +1,3 @@
 require("keymaps.groups")
-require("keymaps.telescope")
+require("keymaps.files")
 require("keymaps.nvim-dap")
