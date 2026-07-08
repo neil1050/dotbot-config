@@ -7,6 +7,7 @@ return {
     {
         "mason-org/mason-lspconfig.nvim",
         opts = {},
+        event = "VeryLazy",
         dependencies = {
             {"mason-org/mason.nvim", opts = {}},
             "neovim/nvim-lspconfig",
