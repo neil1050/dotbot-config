@@ -1,6 +1,6 @@
 [submodule "src/nvim"]
 	path = src/nvim
-	url = git@github.com:neil1050/dotbot-config.git
+	url = https://github.com/neil1050/dotbot-config.git
 	branch = config/nvim
 [submodule "src/dotbot"]
 	path = src/dotbot
