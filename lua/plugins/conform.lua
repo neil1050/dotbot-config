@@ -7,7 +7,7 @@ return {
         },
         formatters_by_ft = {
             python = {"black"},
-	    yaml = {"yaml-fmt"}
+	        yaml = {"yamlfmt"}
         }
     },
 }
