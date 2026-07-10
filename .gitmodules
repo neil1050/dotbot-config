@@ -7,3 +7,7 @@
 	url = https://github.com/anishathalye/dotbot
 [submodule "dotbot"]
 	ignore = dirty
+[submodule "src/starship"]
+	path = src/starship
+	url = https://github.com/neil1050/dotbot-config
+	branch = config/starship
