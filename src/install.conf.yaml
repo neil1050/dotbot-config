@@ -9,7 +9,6 @@
       path: nvim/init.lua
     ~/.config/nvim/lua:
       path: nvim/lua
-
     # starship config
     ~/.config/starship.toml:
       path: starship/starship.toml
