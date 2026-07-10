@@ -13,3 +13,6 @@
     # starship config
     ~/.config/starship.toml:
       path: starship/starship.toml
+    # git config
+    ~/.config/git/config:
+      path: git/.gitconfig
