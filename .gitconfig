@@ -1,0 +1,27 @@
+# set up editor as neovim
+[core]
+    editor = nvim
+
+# set up personal info
+[user]
+    name = Neil Li
+    email = 76211576+neil1050@users.noreply.github.com
+
+# set the default branch to main
+[init]
+    defaultBranch = main
+# ensure line endings are based on operating system
+[core]
+    autocrlf = input
+
+# gpg configuration
+[gpg]
+    program = gpg
+[user]
+    signingKey = 2D87FD113FC90F03
+[commit]
+    gpgSign = true
+
+# ssh configuration
+[core]
+    sshCommand = ssh
