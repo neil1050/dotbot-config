@@ -19,16 +19,22 @@ return {
     },
     {
         "theHamsta/nvim-dap-virtual-text",
+        lazy = true,
+        event = "VeryLazy",
         opts = {}
     },
     {
         "jay-babu/mason-nvim-dap.nvim",
+        lazy = true,
+        event = "VeryLazy",
         opts = {
             ensure_installed = {"python"}
         }
     },
     {
         "rcarriga/nvim-dap-ui",
+        lazy = true,
+        event = "VeryLazy",
         opts = {}
     },
     {
@@ -36,6 +42,8 @@ return {
         config = function(opts)
             require("dap-python").setup("~/AppData/Local/nvim-data/mason/packages/debugpy/venv/Scripts/python",
             opts)
-        end
+        end,
+        lazy = true,
+        event = "VeryLazy"
     }
 }

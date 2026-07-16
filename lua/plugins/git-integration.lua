@@ -2,10 +2,12 @@ return {
     -- add git integration to neovim
     {
         "tpope/vim-fugitive",
-        lazy = false
+        lazy = true,
+        event = "VeryLazy"
     },
     {
         "lewis6991/gitsigns.nvim",
-        lazy = false
+        lazy = true,
+        event = "VeryLazy"
     },
 }

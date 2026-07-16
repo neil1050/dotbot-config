@@ -3,7 +3,7 @@ return {
     {
         "L3MON4D3/LuaSnip",
         event = "VeryLazy",
-        lazy = false,
+        lazy = true,
     },
     {
         "saadparwaiz1/cmp_luasnip",
@@ -11,37 +11,37 @@ return {
         dependencies = {
             "L3MON4D3/LuaSnip"
         },
-        lazy = false,
+        lazy = true,
     },
     {
         "neovim/nvim-lspconfig",
         event = "VeryLazy",
-        lazy = false,
+        lazy = true,
     },
     {
         "hrsh7th/cmp-nvim-lsp",
-        lazy = false,
+        lazy = true,
         event = "VeryLazy",
         opts = {}
     },
     {
         "hrsh7th/cmp-buffer",
-        lazy = false,
+        lazy = true,
         event = "VeryLazy"
     },
     {
         "hrsh7th/cmp-path",
-        lazy = false,
+        lazy = true,
         event = "VeryLazy"
     },
     {
         "hrsh7th/cmp-cmdline",
-        lazy = false,
+        lazy = true,
         event = "VeryLazy"
     },
     {
         "hrsh7th/nvim-cmp",
-        lazy = false,
+        lazy = true,
         event = "VeryLazy",
         config = function(_, opts)
             opts.sources = opts.sources or {}
